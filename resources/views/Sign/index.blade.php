@@ -84,11 +84,26 @@
                 padding: 8px;
             }
         }
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-logo {
+            max-width: 100px;
+            height: auto;
+            object-fit: contain;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
     </style>
 </head>
 <body>
 <!-- Logo Image -->
-<img src="{{ asset('image/logo') }}" alt="Form Logo" class="form-logo">
+<div class="logo-container">
+    <img src="{{ asset('image/logo.png') }}" alt="Stay Home Logo" class="form-logo">
+</div>
 
 <!-- Form Container -->
 <div class="form-container">
